@@ -1,0 +1,6 @@
+{
+  "name": "RailForge Consist",
+  "description": "Professional MSTS Trainset scanner, interactive 3D consist editor, Master Consist library, and intelligent broken consist recovery engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --rf-bg: #090B0D;
+    --rf-workspace: #0E1115;
+    --rf-panel: #14191F;
+    --rf-surface: #1A2028;
+    --rf-border: #252D36;
+    --rf-text-primary: #E8EDF2;
+    --rf-text-secondary: #929DA9;
+    --rf-text-muted: #65717E;
+    --rf-accent: #79A997;
+    --rf-accent-dark: #547D70;
+    --rf-success: #69BD91;
+    --rf-warning: #D6A85B;
+    --rf-error: #D87575;
+  }
+
+  body {
+    font-family: 'Public Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--rf-bg);
+    color: var(--rf-text-primary);
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  code, pre, .font-mono, .tabular-nums {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for technical desktop feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0E1115;
+}
+::-webkit-scrollbar-thumb {
+  background: #252D36;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #343E4B;
+}
+
+/* Three.js viewport canvas cursor styles */
+canvas:focus {
+  outline: none;
+}
